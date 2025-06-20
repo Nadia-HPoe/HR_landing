@@ -1,0 +1,69 @@
+@import "../../assets/styles/var";
+
+.info {
+  width: 100vw;
+  max-width: 1920px;
+}
+
+.info_banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $white;
+  height: 240px;
+}
+
+.info_paragraph {
+  font-family: "Times New Roman", Times, serif;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  color: $blue;
+}
+
+.info_content {
+  background-color: $dust;
+}
+.wrapper {
+  padding: 120px 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.title {
+  padding-bottom: 60px;
+  font-family: "Times New Roman", Times, serif;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+  color: $d-blue;
+}
+.list {
+  column-count: 3;
+}
+
+.list_item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 50px;
+  & > span {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #6f8db4;
+    color: $white;
+    font-size: 24px;
+    font-family: $font-inter;
+  }
+  & > p {
+    font-family: $font-inter;
+    width: 46%;
+  }
+}
