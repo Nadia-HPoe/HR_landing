@@ -30,7 +30,7 @@ function Info() {
               <span>5</span> <p>создания hr отделов под расширение штата</p>
             </div>
             <div className={styles.list_item}>
-              <span>6</span> <p>обучение hr-менеджеров по персоналу</p>
+              <span>6</span> <p>обучения hr-менеджеров по персоналу</p>
             </div>
           </div>
         </div>

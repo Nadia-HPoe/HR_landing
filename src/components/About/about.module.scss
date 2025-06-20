@@ -1,0 +1,69 @@
+@import "../../assets/styles/var";
+
+.about {
+  width: 100vw;
+  max-width: 1920px;
+  background-color: $white;
+}
+.wrapper {
+  padding: 120px 150px 107px 220px;
+}
+.title {
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+  color: $d-blue;
+}
+.subtitle {
+  padding: 60px 0 90px;
+  text-align: center;
+  color: $blue;
+  font-family: "Times New Roman", Times, serif;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 40px;
+}
+
+.about_container {
+  display: flex;
+  align-items: end;
+}
+.about_wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 60px;
+}
+
+.about_paragraph,
+.about_list {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: $d-blue;
+  list-style-position: inside;
+  & > span {
+    font-weight: 700;
+  }
+}
+.about_list_item {
+  padding-top: 10px;
+  &:first-of-type {
+    padding-top: 20px;
+  }
+}
+
+.about_subtitle {
+  color: $blue;
+  font-family: "Times New Roman", Times, serif;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+}
