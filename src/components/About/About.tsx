@@ -1,4 +1,5 @@
 import styles from "./about.module.scss";
+import Image from "../../assets/images/aboutme_img.jpg";
 
 function About() {
   return (
@@ -10,7 +11,7 @@ function About() {
         </h3>
         <div className={styles.about_container}>
           <div className={styles.image_wrapper}>
-            <img className={styles.image} src='' alt='AboutMePhoto'></img>
+            <img className={styles.image} src={Image} alt='AboutMePhoto'></img>
           </div>
           <div className={styles.about_wrapper}>
             <p className={styles.about_paragraph}>

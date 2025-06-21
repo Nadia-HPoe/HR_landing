@@ -68,4 +68,11 @@
   text-transform: uppercase;
   color: $white;
   cursor: pointer;
+  transition: transform 0.5s ease-in-out;
+  &:hover {
+    transition: 0.3 all;
+    -webkit-transform: scale(1.06);
+    -ms-transform: scale(1.06);
+    transform: scale(1.06);
+  }
 }

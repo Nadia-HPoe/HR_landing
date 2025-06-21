@@ -28,9 +28,16 @@
   line-height: 40px;
 }
 
+.image {
+  width: 490px;
+  height: auto;
+  border-radius: 15px;
+}
+
 .about_container {
-  display: flex;
-  align-items: end;
+  display: grid;
+  grid-template-columns: 550px 550px;
+  justify-content: center;
 }
 .about_wrapper {
   display: flex;

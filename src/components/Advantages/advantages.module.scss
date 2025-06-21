@@ -1,0 +1,39 @@
+@import "../../assets/styles/var";
+
+.advantages {
+  width: 100vw;
+  max-width: 1920px;
+  background-color: $dust;
+}
+
+.title {
+  padding: 120px 0 80px;
+  font-family: "Times New Roman", Times, serif;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+  color: $d-blue;
+  text-align: center;
+}
+
+.cards {
+  padding: 0 252px 123px;
+  display: grid;
+  grid-template-columns: repeat(3, 350px);
+  justify-content: center;
+  grid-gap: 20px;
+}
+.card {
+  width: 300px;
+  padding: 27px 20px;
+  display: flex;
+  align-items: center;
+  background-color: $white;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: $d-blue;
+}

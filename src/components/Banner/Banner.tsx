@@ -1,4 +1,5 @@
 import styles from "./banner.module.scss";
+import MainPhoto from "../../assets/images/main_img2.jpg";
 
 function Banner() {
   return (
@@ -12,11 +13,9 @@ function Banner() {
             <br /> персонала в сферах sale, marketing, IT
           </p>
           <button className={styles.button}>записаться на КОНСУЛЬТАЦИЮ</button>
-          <button className={styles.button2}>записаться на КОНСУЛЬТАЦИЮ</button>
-          <button className={styles.button3}>записаться на КОНСУЛЬТАЦИЮ</button>
         </div>
         <div className={styles.image_container}>
-          <img className={styles.image} src='' alt='MainPhoto' />
+          <img className={styles.image} src={MainPhoto} alt='MainPhoto' />
         </div>
       </div>
     </section>
