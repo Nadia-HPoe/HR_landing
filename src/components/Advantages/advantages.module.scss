@@ -1,9 +1,9 @@
-@import "../../assets/styles/var";
+@use "../../assets/styles/var" as var;
 
 .advantages {
   width: 100vw;
   max-width: 1920px;
-  background-color: $dust;
+  background-color: var.$dust;
 }
 
 .title {
@@ -13,7 +13,7 @@
   font-weight: 700;
   font-size: 36px;
   line-height: 44px;
-  color: $d-blue;
+  color: var.$d-blue;
   text-align: center;
 }
 
@@ -29,11 +29,11 @@
   padding: 27px 20px;
   display: flex;
   align-items: center;
-  background-color: $white;
-  font-family: "Inter";
+  background-color: var.$white;
+  font-family: var.$font-inter;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 19px;
-  color: $d-blue;
+  color: var.$d-blue;
 }

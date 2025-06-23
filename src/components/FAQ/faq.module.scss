@@ -1,1 +1,56 @@
-@import "../../assets/styles/var";
+@use "../../assets/styles/var" as var;
+
+.faq {
+  width: 100vw;
+  max-width: 1920px;
+  background-color: var.$dust;
+}
+.title {
+  padding: 128px 0 80px;
+  font-family: "Times New Roman", Times, serif;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+  color: var.$d-blue;
+  text-align: center;
+}
+.container {
+  padding: 0 263px 128px;
+  font-family: var.$font-inter;
+  font-style: normal;
+}
+.question_block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 0 27px;
+}
+.question {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  color: var.$blue;
+}
+.button {
+  border: none;
+  background-color: transparent;
+  font-weight: 700;
+  font-size: 45px;
+  color: var.$blue;
+  cursor: pointer;
+}
+.answer_block {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.answer {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: var.$d-blue;
+}
+ul {
+  list-style-position: inside;
+}

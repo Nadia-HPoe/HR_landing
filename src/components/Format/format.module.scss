@@ -1,9 +1,9 @@
-@import "../../assets/styles/var";
+@use "../../assets/styles/var" as var;
 
 .format {
   width: 100vw;
   max-width: 1920px;
-  background-color: $white;
+  background-color: var.$white;
   padding: 120px 240px 60px;
 }
 .title {
@@ -13,7 +13,7 @@
   font-weight: 700;
   font-size: 36px;
   line-height: 44px;
-  color: $d-blue;
+  color: var.$d-blue;
   text-align: center;
 }
 
@@ -33,7 +33,7 @@
   margin-left: -3px;
   width: 6px;
   height: 77%;
-  background: $d-blue;
+  background: var.$d-blue;
   z-index: 1;
 }
 
@@ -67,7 +67,7 @@
   height: 18px;
   border-radius: 50%;
   border: 2px solid #f5f7fa;
-  background: $blue;
+  background: var.$blue;
   margin-top: 10px;
   z-index: 9999;
 }
@@ -75,25 +75,22 @@
 .content {
   width: 90%;
   padding: 0 15px;
-  color: #666;
+  font-family: var.$font-inter;
+  font-style: normal;
 }
 
 .content h3 {
   margin-top: 5px;
   margin-bottom: 5px;
-  font-family: "Inter";
-  font-style: normal;
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
-  color: $d-blue;
+  color: var.$d-blue;
 }
 
 .content p {
-  font-family: "Inter";
-  font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 24px;
-  color: $blue;
+  color: var.$blue;
 }

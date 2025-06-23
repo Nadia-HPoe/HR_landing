@@ -1,4 +1,4 @@
-@import "../../assets/styles/var";
+@use "../../assets/styles/var" as var;
 
 .header {
   // position: fixed;
@@ -12,11 +12,11 @@
     rgba(229, 235, 242, 1) 100%
   );
   padding: 10px 100px;
-  font-family: $font-inter;
+  font-family: var.$font-inter;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: $blue;
+  color: var.$blue;
 }
 
 .logo_text {
@@ -59,14 +59,14 @@
   justify-content: center;
   align-items: center;
   padding: 12px 23px;
-  background: $blue;
+  background: var.$blue;
   border: none;
   border-radius: 50px;
   font-weight: 700;
   font-size: 12px;
   line-height: 200%;
   text-transform: uppercase;
-  color: $white;
+  color: var.$white;
   cursor: pointer;
   transition: transform 0.5s ease-in-out;
   &:hover {

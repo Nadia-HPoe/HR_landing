@@ -1,9 +1,9 @@
-@import "../../assets/styles/var";
+@use "../../assets/styles/var" as var;
 
 .about {
   width: 100vw;
   max-width: 1920px;
-  background-color: $white;
+  background-color: var.$white;
 }
 .wrapper {
   padding: 120px 150px 107px 220px;
@@ -15,12 +15,12 @@
   font-weight: 700;
   font-size: 36px;
   line-height: 44px;
-  color: $d-blue;
+  color: var.$d-blue;
 }
 .subtitle {
   padding: 60px 0 90px;
   text-align: center;
-  color: $blue;
+  color: var.$blue;
   font-family: "Times New Roman", Times, serif;
   font-style: italic;
   font-weight: 700;
@@ -48,12 +48,12 @@
 
 .about_paragraph,
 .about_list {
-  font-family: "Inter";
+  font-family: var.$font-inter;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 22px;
-  color: $d-blue;
+  color: var.$d-blue;
   list-style-position: inside;
   & > span {
     font-weight: 700;
@@ -67,7 +67,7 @@
 }
 
 .about_subtitle {
-  color: $blue;
+  color: var.$blue;
   font-family: "Times New Roman", Times, serif;
   font-style: italic;
   font-weight: 700;

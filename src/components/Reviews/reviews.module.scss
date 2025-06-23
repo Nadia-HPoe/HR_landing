@@ -1,1 +1,39 @@
-@import "../../assets/styles/var";
+@use "../../assets/styles/var" as var;
+
+.reviews {
+  width: 100vw;
+  max-width: 1920px;
+  background-color: var.$white;
+}
+
+.title {
+  padding: 128px 0 60px;
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+  color: var.$d-blue;
+}
+
+.container {
+  padding: 0 186px 197px;
+  display: flex;
+  justify-content: center;
+  gap: 65px;
+}
+.review {
+  padding: 30px;
+  background-color: var.$dust;
+  width: 488px;
+  border-radius: 15px;
+}
+.review_text {
+  font-family: var.$font-inter;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: var.$d-blue;
+}

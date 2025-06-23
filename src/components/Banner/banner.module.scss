@@ -1,4 +1,4 @@
-@import "../../assets/styles/var";
+@use "../../assets/styles/var" as var;
 
 .banner {
   //   position: relative;
@@ -21,7 +21,7 @@
   justify-content: space-around;
   // align-items: end;
   padding: 80px 100px;
-  color: $d-blue;
+  color: var.$d-blue;
 }
 
 .content {
@@ -37,7 +37,7 @@
 
 .text {
   padding: 40px 0;
-  font-family: $font-inter;
+  font-family: var.$font-inter;
   font-weight: 400;
   font-size: 24px;
   line-height: 29px;
@@ -50,10 +50,10 @@
   align-items: center;
   padding: 12px 77px;
   gap: 15px;
-  background: $blue;
+  background: var.$blue;
   border-radius: 50px;
   border: none;
-  color: $white;
+  color: var.$white;
   text-transform: uppercase;
   font-weight: 700;
   font-size: 12px;
@@ -69,9 +69,6 @@
   }
 }
 
-// .image_container {
-
-// }
 .image {
   width: 100%;
   height: auto;

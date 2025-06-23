@@ -1,4 +1,4 @@
-@import "../../assets/styles/var";
+@use "../../assets/styles/var" as var;
 
 .info {
   width: 100vw;
@@ -9,7 +9,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: $white;
+  background-color: var.$white;
   height: 240px;
 }
 
@@ -20,11 +20,11 @@
   font-size: 30px;
   line-height: 36px;
   text-align: center;
-  color: $blue;
+  color: var.$blue;
 }
 
 .info_content {
-  background-color: $dust;
+  background-color: var.$dust;
 }
 .wrapper {
   padding: 120px 150px;
@@ -39,7 +39,7 @@
   font-weight: 700;
   font-size: 36px;
   line-height: 44px;
-  color: $d-blue;
+  color: var.$d-blue;
 }
 .list {
   column-count: 3;
@@ -58,12 +58,12 @@
     height: 60px;
     border-radius: 50%;
     background-color: #6f8db4;
-    color: $white;
+    color: var.$white;
     font-size: 24px;
-    font-family: $font-inter;
+    font-family: var.$font-inter;
   }
   & > p {
-    font-family: $font-inter;
+    font-family: var.$font-inter;
     width: 46%;
   }
 }
