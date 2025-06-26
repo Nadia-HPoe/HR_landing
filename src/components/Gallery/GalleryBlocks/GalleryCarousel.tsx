@@ -9,7 +9,8 @@ import img5 from "../../../assets/images/diploma5.jpg";
 import img6 from "../../../assets/images/diploma6.jpg";
 import img7 from "../../../assets/images/diploma7.jpg";
 import img8 from "../../../assets/images/diploma8.jpg";
-
+import arrowl from "../../../assets/images/arrow_left.png";
+import arrowr from "../../../assets/images/arrow_right.png";
 type Slide = {
   src: string;
 };
@@ -52,7 +53,9 @@ function GalleryCarousel() {
           aria-label='Previous'
           onClick={handlePrev}
           disabled={page === 0}
-        ></button>
+        >
+          <img src={arrowl} alt='' />
+        </button>
         <div className={styles.sliders}>
           {visibleSlides.map((slide, index) => (
             <GalleryItem key={startIdx + index} src={slide.src} />
@@ -63,7 +66,9 @@ function GalleryCarousel() {
           aria-label='Next'
           onClick={handleNext}
           disabled={page === totalPages - 1}
-        ></button>
+        >
+          <img src={arrowr} alt='' />
+        </button>
       </div>
     </section>
   );

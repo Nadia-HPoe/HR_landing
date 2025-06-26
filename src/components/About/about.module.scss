@@ -4,21 +4,11 @@
   width: 100vw;
   max-width: 1920px;
   background-color: var.$white;
+  padding: 0 150px 107px 220px;
 }
-.wrapper {
-  padding: 120px 150px 107px 220px;
-}
-.title {
-  text-align: center;
-  font-family: "Times New Roman", Times, serif;
-  font-style: italic;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 44px;
-  color: var.$d-blue;
-}
+
 .subtitle {
-  padding: 60px 0 90px;
+  padding: 0 0 90px;
   text-align: center;
   color: var.$blue;
   font-family: "Times New Roman", Times, serif;

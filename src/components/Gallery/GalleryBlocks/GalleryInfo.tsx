@@ -1,12 +1,11 @@
+import Title from "../../Title/Title";
 import styles from "../gallery.module.scss";
 
 function GalleryInfo() {
   return (
     <section className={styles.info}>
       <div className={styles.info_container}>
-        <h2 className={styles.info_title}>
-          Прошла путь от ассистента до HR Advisor
-        </h2>
+        <Title title='Прошла путь от ассистента до HR Advisor' />
         <div className={styles.info_cards}>
           <div className={styles.info_card}>
             <p className={styles.info_subtitle}>HR консультант</p>

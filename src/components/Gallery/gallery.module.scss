@@ -35,17 +35,9 @@
   color: var.$d-blue;
 }
 .info_container {
-  padding: 133px 248px 250px;
+  padding: 0 248px 250px;
 }
-.info_title {
-  padding: 120px 0 93px;
-  font-family: "Times New Roman", Times, serif;
-  font-style: italic;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 44px;
-  text-align: center;
-}
+
 .info_cards {
   display: grid;
   grid-template-columns: repeat(2, 430px);
@@ -92,30 +84,47 @@
   justify-content: space-around;
 }
 
+// .button {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   width: 36px;
+//   height: 36px;
+//   border-radius: 4px;
+//   background-color: var.$white;
+//   transform: rotate(-45deg);
+//   position: relative;
+//   cursor: pointer;
+//   &:after {
+//     content: "";
+//     width: 18px;
+//     height: 18px;
+//     position: absolute;
+//     transform: rotate(45deg);
+//   }
+//   &:first-child:after {
+//     background: url("../../assets/images/arrow_left.png") center / contain
+//       no-repeat;
+//   }
+//   &:last-child:after {
+//     background: url("../../assets/images/arrow_right.png") center / contain
+//       no-repeat;
+//   }
+// }
 .button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 36px;
-  height: 36px;
-  border-radius: 4px;
+  padding: 15px;
   background-color: var.$white;
-  transform: rotate(-45deg);
-  position: relative;
+  border: none;
   cursor: pointer;
-  &:after {
-    content: "";
-    width: 18px;
-    height: 18px;
-    position: absolute;
-    transform: rotate(45deg);
+  & > img {
+    opacity: 0.5;
   }
-  &:first-child:after {
-    background: url("../../assets/images/arrow_left.png") center / contain
-      no-repeat;
+  &:hover img,
+  &:active img {
+    opacity: 0.8;
   }
-  &:last-child:after {
-    background: url("../../assets/images/arrow_right.png") center / contain
-      no-repeat;
+  &:disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
   }
 }

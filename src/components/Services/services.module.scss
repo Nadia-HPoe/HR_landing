@@ -4,21 +4,11 @@
   width: 100vw;
   max-width: 1920px;
   background-color: var.$dust;
-  padding: 128px 60px;
+  padding: 0 60px 128px;
   font-family: var.$font-inter;
   font-style: normal;
 }
 
-.title {
-  padding-bottom: 60px;
-  font-family: "Times New Roman", Times, serif;
-  font-style: italic;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 44px;
-  color: var.$d-blue;
-  text-align: center;
-}
 .cards {
   display: grid;
   grid-template-columns: repeat(3, 450px);

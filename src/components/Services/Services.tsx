@@ -1,9 +1,10 @@
+import Title from "../Title/Title";
 import styles from "./services.module.scss";
 
 function Services() {
   return (
     <section className={styles.services}>
-      <h2 className={styles.title}>Мои услуги</h2>
+      <Title title='Мои услуги' />
       <div className={styles.cards}>
         <div className={styles.card}>
           <h5 className={styles.card_title}>Запуск воронки найма</h5>

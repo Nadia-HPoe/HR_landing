@@ -3,11 +3,12 @@ import Icon1 from "../../assets/images/icon1.png";
 import Icon2 from "../../assets/images/icon2.png";
 import Icon3 from "../../assets/images/icon3.png";
 import Icon6 from "../../assets/images/icon6.png";
+import Title from "../Title/Title";
 
 function Advantages() {
   return (
     <section className={styles.advantages}>
-      <h3 className={styles.title}>Преимущества работы со мной</h3>
+      <Title title='Преимущества работы со мной' />
       <div className={styles.cards}>
         <div className={styles.card}>
           <img className={styles.icon} src={Icon1} alt='' />

@@ -1,9 +1,10 @@
+import Title from "../Title/Title";
 import styles from "./reviews.module.scss";
 
 function Reviews() {
   return (
     <section className={styles.reviews}>
-      <h2 className={styles.title}>Отзывы</h2>
+      <Title title='Отзывы' />
       <div className={styles.container}>
         <div className={styles.review}>
           <p className={styles.review_text}>

@@ -1,0 +1,106 @@
+@use "../../assets/styles/var" as var;
+
+.footer {
+  width: 100vw;
+  max-width: 1920px;
+}
+.banner {
+  background-color: var.$dust;
+  display: flex;
+  justify-content: center;
+  font-family: var.$font-inter;
+  font-style: normal;
+  color: var.$d-blue;
+}
+.banner_wrapper {
+  padding: 94px 0;
+  display: flex;
+  gap: 85px;
+}
+.banner_text {
+  display: flex;
+  flex-direction: column;
+}
+.banner_title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+}
+.banner_paragraph {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+}
+.banner_button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 77px;
+  background: var.$blue;
+  border: none;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 200%;
+  text-transform: uppercase;
+  color: var.$white;
+  cursor: pointer;
+  transition: transform 0.5s ease-in-out;
+  &:hover {
+    transition: 0.3 all;
+    -webkit-transform: scale(1.06);
+    -ms-transform: scale(1.06);
+    transform: scale(1.06);
+  }
+}
+
+.container {
+  background-color: var.$l-gray;
+  padding: 55px 100px 29px;
+  font-family: var.$font-inter;
+}
+.contacts {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 30px;
+  column-gap: 150px;
+  padding-bottom: 67px;
+}
+.contact_item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  text-decoration: none;
+  color: var.$d-blue;
+}
+.contact_phone {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 27px;
+}
+.contact_text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+}
+.contact_icon {
+  width: 40px;
+  height: 40px;
+}
+.contact_paragraph {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+}
+.rights {
+  display: flex;
+  justify-content: space-between;
+  color: var.$gray;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+}

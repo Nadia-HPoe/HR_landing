@@ -1,4 +1,4 @@
-@import "/src/assets/styles/var.scss";
+@use "/src/assets/styles/var.scss" as var;
 
 * {
   margin: 0;
@@ -7,5 +7,5 @@
 }
 
 body {
-  background-color: $white;
+  background-color: var.$white;
 }

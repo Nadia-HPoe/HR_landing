@@ -1,9 +1,10 @@
+import Title from "../Title/Title";
 import styles from "./format.module.scss";
 
 function Format() {
   return (
     <section className={styles.format}>
-      <h2 className={styles.title}>Формат работы</h2>
+      <Title title='Формат работы' />
       <div className={styles.container}>
         <div className={styles.block_left}>
           <div className={styles.marker}></div>
