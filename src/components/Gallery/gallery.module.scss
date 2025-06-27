@@ -1,9 +1,9 @@
 @use "../../assets/styles/var" as var;
 
-.gallery {
-  width: 100vw;
-  max-width: 1920px;
-}
+// .gallery {
+//   width: 100vw;
+//   max-width: 1920px;
+// }
 
 .banner {
   background-color: var.$l-gray;
@@ -84,33 +84,6 @@
   justify-content: space-around;
 }
 
-// .button {
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   width: 36px;
-//   height: 36px;
-//   border-radius: 4px;
-//   background-color: var.$white;
-//   transform: rotate(-45deg);
-//   position: relative;
-//   cursor: pointer;
-//   &:after {
-//     content: "";
-//     width: 18px;
-//     height: 18px;
-//     position: absolute;
-//     transform: rotate(45deg);
-//   }
-//   &:first-child:after {
-//     background: url("../../assets/images/arrow_left.png") center / contain
-//       no-repeat;
-//   }
-//   &:last-child:after {
-//     background: url("../../assets/images/arrow_right.png") center / contain
-//       no-repeat;
-//   }
-// }
 .button {
   padding: 15px;
   background-color: var.$white;

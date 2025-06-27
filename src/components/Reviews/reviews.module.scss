@@ -1,8 +1,6 @@
 @use "../../assets/styles/var" as var;
 
 .reviews {
-  width: 100vw;
-  max-width: 1920px;
   background-color: var.$white;
 }
 
@@ -17,6 +15,8 @@
   background-color: var.$dust;
   width: 488px;
   border-radius: 15px;
+  display: flex;
+  align-items: center;
 }
 .review_text {
   font-family: var.$font-inter;

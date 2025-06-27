@@ -4,7 +4,7 @@ import Title from "../Title/Title";
 
 function About() {
   return (
-    <section className={styles.about}>
+    <section className={styles.about} id='about'>
       <Title title='Обо мне' />
 
       <h3 className={styles.subtitle}>

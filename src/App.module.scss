@@ -3,3 +3,15 @@
   margin: 0 auto;
   padding: 0;
 }
+.app {
+  width: 1920px;
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+}
+
+@media (max-width: 1919px) {
+  .app {
+    width: 1440px;
+  }
+}

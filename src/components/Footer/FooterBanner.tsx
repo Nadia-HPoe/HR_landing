@@ -2,7 +2,7 @@ import styles from "./footer.module.scss";
 
 function FooterBanner() {
   return (
-    <section className={styles.banner}>
+    <section className={styles.banner} id='contact'>
       <div className={styles.banner_wrapper}>
         <div className={styles.banner_text}>
           <h4 className={styles.banner_title}>Остались вопросы?</h4>

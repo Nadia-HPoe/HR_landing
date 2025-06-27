@@ -10,7 +10,7 @@ function Info() {
           <br /> что тупиковых ситуаций не бывает"
         </p>
       </div>
-      <div className={styles.info_content}>
+      <div className={styles.info_content} id='for'>
         <Title title='Ко мне обращаются в ситуациях:' />
         <div className={styles.list}>
           <div className={styles.list_item}>

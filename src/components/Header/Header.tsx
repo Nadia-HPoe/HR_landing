@@ -8,12 +8,36 @@ function Header() {
       </div>
       <nav className={styles.nav}>
         <ul className={styles.list}>
-          <li className={styles.nav_item}>Для кого</li>
-          <li className={styles.nav_item}>Обо мне</li>
-          <li className={styles.nav_item}>Услуги</li>
-          <li className={styles.nav_item}>Отзывы</li>
-          <li className={styles.nav_item}>FAQ</li>
-          <li className={styles.nav_item}>Контакты</li>
+          <li className={styles.nav_item}>
+            <a className={styles.nav_item_link} href='#for'>
+              Для кого
+            </a>
+          </li>
+          <li className={styles.nav_item}>
+            <a className={styles.nav_item_link} href='#about'>
+              Обо мне
+            </a>
+          </li>
+          <li className={styles.nav_item}>
+            <a className={styles.nav_item_link} href='#service'>
+              Услуги
+            </a>
+          </li>
+          <li className={styles.nav_item}>
+            <a className={styles.nav_item_link} href='#review'>
+              Отзывы
+            </a>
+          </li>
+          <li className={styles.nav_item}>
+            <a className={styles.nav_item_link} href='#faq'>
+              FAQ
+            </a>
+          </li>
+          <li className={styles.nav_item}>
+            <a className={styles.nav_item_link} href='#contact'>
+              Контакты
+            </a>
+          </li>
         </ul>
       </nav>
       <div className={styles.contact}>

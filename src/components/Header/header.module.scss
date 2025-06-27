@@ -1,8 +1,8 @@
 @use "../../assets/styles/var" as var;
 
 .header {
-  // position: fixed;
-  // z-index: 2;
+  position: fixed;
+  z-index: 99999;
   width: 100vw;
   max-width: 1920px;
   background: linear-gradient(
@@ -34,11 +34,20 @@
 }
 
 .nav_item {
-  padding-left: 45px;
+  padding-left: 70px;
   text-transform: uppercase;
   font-weight: 400;
-  font-size: 12px;
-  line-height: 15px;
+  font-size: 16px;
+  line-height: 20px;
+}
+.nav_item_link {
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.6s;
+  &:hover,
+  &:active {
+    color: var.$d-blue;
+  }
 }
 
 .contact {

@@ -135,7 +135,7 @@ const Faq: React.FC = () => {
   };
 
   return (
-    <section className={styles.faq}>
+    <section className={styles.faq} id='faq'>
       <Title title='Часто задаваемые вопросы' />
       <div className={styles.container}>
         {faqData.map((item, index) => {

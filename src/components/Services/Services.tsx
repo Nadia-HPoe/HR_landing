@@ -3,7 +3,7 @@ import styles from "./services.module.scss";
 
 function Services() {
   return (
-    <section className={styles.services}>
+    <section className={styles.services} id='service'>
       <Title title='Мои услуги' />
       <div className={styles.cards}>
         <div className={styles.card}>
