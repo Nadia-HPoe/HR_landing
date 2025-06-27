@@ -1,0 +1,12 @@
+@use "../../assets/styles/var" as var;
+
+.title {
+  padding: 120px 0 60px;
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+  color: var.$d-blue;
+}

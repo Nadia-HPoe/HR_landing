@@ -1,0 +1,86 @@
+@use "../../assets/styles/var" as var;
+
+.format {
+  // width: 100vw;
+  // max-width: 1920px;
+  background-color: var.$white;
+  padding: 0 240px 60px;
+}
+
+.container {
+  width: 80%;
+  padding: 50px 0;
+  margin: 50px auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.container:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -3px;
+  width: 6px;
+  height: 77%;
+  background: var.$d-blue;
+  z-index: 1;
+}
+
+.block_right,
+.block_left {
+  width: -webkit-calc(50% + 9px);
+  width: -moz-calc(50% + 9px);
+  width: calc(50% + 9px);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -moz-box-pack: justify;
+  justify-content: space-between;
+  clear: both;
+}
+
+.block_right {
+  float: right;
+}
+
+.block_left {
+  float: left;
+  direction: rtl;
+}
+
+.marker {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: 2px solid #f5f7fa;
+  background: var.$blue;
+  margin-top: 10px;
+  z-index: 9999;
+}
+
+.content {
+  width: 90%;
+  padding: 0 15px;
+  font-family: var.$font-inter;
+  font-style: normal;
+}
+
+.content h3 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: var.$d-blue;
+}
+
+.content p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: var.$blue;
+}

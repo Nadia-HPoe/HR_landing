@@ -1,0 +1,53 @@
+@use "../../assets/styles/var" as var;
+
+.links {
+  font-family: var.$font-inter;
+}
+
+.container {
+  padding: 0 287px 140px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 66px;
+  color: var.$d-blue;
+}
+
+.block_links,
+.block_social {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.links_title {
+  text-align: left;
+  padding-bottom: 20px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.links_item {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+}
+.social_tg {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+.social_item {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.link {
+  text-decoration: none;
+  color: var.$blue;
+  transition: 0.5s;
+  &:hover {
+    transition: 0.5s;
+    text-decoration: underline;
+  }
+}

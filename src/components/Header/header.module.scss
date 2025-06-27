@@ -1,0 +1,87 @@
+@use "../../assets/styles/var" as var;
+
+.header {
+  position: fixed;
+  z-index: 99999;
+  width: 100vw;
+  max-width: 1920px;
+  background: linear-gradient(
+    90deg,
+    rgba(195, 215, 241, 1) 0%,
+    rgba(226, 234, 242, 1) 50%,
+    rgba(229, 235, 242, 1) 100%
+  );
+  padding: 10px 100px;
+  font-family: var.$font-inter;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var.$blue;
+}
+
+.logo_text {
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 18px;
+  font-style: italic;
+}
+
+.list {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+}
+
+.nav_item {
+  padding-left: 70px;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
+.nav_item_link {
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.6s;
+  &:hover,
+  &:active {
+    color: var.$d-blue;
+  }
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+}
+
+.phone {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 23px;
+  background: var.$blue;
+  border: none;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 200%;
+  text-transform: uppercase;
+  color: var.$white;
+  cursor: pointer;
+  transition: transform 0.5s ease-in-out;
+  &:hover {
+    transition: 0.3 all;
+    -webkit-transform: scale(1.06);
+    -ms-transform: scale(1.06);
+    transform: scale(1.06);
+  }
+}

@@ -1,0 +1,11 @@
+@use "/src/assets/styles/var.scss" as var;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var.$white;
+}

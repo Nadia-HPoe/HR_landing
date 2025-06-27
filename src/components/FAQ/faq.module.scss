@@ -1,0 +1,59 @@
+@use "../../assets/styles/var" as var;
+
+.faq {
+  // width: 100vw;
+  // max-width: 1920px;
+  background-color: var.$dust;
+}
+.container {
+  padding: 0 263px 128px;
+  font-family: var.$font-inter;
+  font-style: normal;
+}
+.line {
+  margin-top: 25px;
+  border: 2px solid var.$l-gray;
+}
+.question_block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 0 15px;
+}
+.question {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  color: var.$blue;
+}
+.button {
+  border: none;
+  background-color: transparent;
+  font-weight: 700;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 55px;
+  color: var.$blue;
+  cursor: pointer;
+}
+.answer_block {
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+  color: var.$d-blue;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.answerParagraph {
+  padding-top: 30px;
+}
+.answerTitle {
+  list-style: disc;
+  font-weight: 700;
+  padding-top: 30px;
+}
+ul {
+  padding: 30px 0;
+  list-style-position: inside;
+}

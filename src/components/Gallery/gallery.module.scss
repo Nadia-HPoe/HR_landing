@@ -1,0 +1,103 @@
+@use "../../assets/styles/var" as var;
+
+// .gallery {
+//   width: 100vw;
+//   max-width: 1920px;
+// }
+
+.banner {
+  background-color: var.$l-gray;
+  color: var.$blue;
+  font-family: var.$font-inter;
+  font-weight: 700;
+}
+.banner_container {
+  display: flex;
+  justify-content: space-around;
+  padding: 53px 200px;
+}
+.banner_card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.banner_number {
+  font-size: 60px;
+  line-height: 73px;
+}
+.banner_text {
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.info {
+  background-color: var.$dust;
+  color: var.$d-blue;
+}
+.info_container {
+  padding: 0 248px 250px;
+}
+
+.info_cards {
+  display: grid;
+  grid-template-columns: repeat(2, 430px);
+  grid-gap: 60px;
+  justify-content: center;
+}
+.info_card {
+  background-color: var.$white;
+  padding: 30px;
+  font-family: var.$font-inter;
+  font-style: normal;
+}
+.info_subtitle {
+  color: var.$blue;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+.info_text {
+  padding-top: 20px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.carousel {
+  background-color: var.$dust;
+  padding: 0 110px 188px;
+}
+.sliders {
+  display: flex;
+  gap: 40px;
+}
+.slide {
+  cursor: pointer;
+}
+.slide_img {
+  max-width: 600px;
+  max-height: 352px;
+}
+.carousel_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.button {
+  padding: 15px;
+  background-color: var.$white;
+  border: none;
+  cursor: pointer;
+  & > img {
+    opacity: 0.5;
+  }
+  &:hover img,
+  &:active img {
+    opacity: 0.8;
+  }
+  &:disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+  }
+}
