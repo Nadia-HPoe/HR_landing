@@ -1,5 +1,5 @@
 import styles from "./banner.module.scss";
-import MainPhoto from "../../assets/images/main_img2.jpg";
+import Image from "../../assets/images/main_img.png";
 
 function Banner() {
   return (
@@ -15,7 +15,7 @@ function Banner() {
           <button className={styles.button}>записаться на КОНСУЛЬТАЦИЮ</button>
         </div>
         <div className={styles.image_container}>
-          <img className={styles.image} src={MainPhoto} alt='MainPhoto' />
+          <img className={styles.image} src={Image} alt='MainPhoto' />
         </div>
       </div>
     </section>
