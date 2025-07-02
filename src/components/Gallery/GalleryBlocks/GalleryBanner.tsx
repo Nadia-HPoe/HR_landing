@@ -5,7 +5,7 @@ function GalleryBanner() {
     <section className={styles.banner}>
       <div className={styles.banner_container}>
         <div className={styles.banner_card}>
-          <p className={styles.banner_number}>10</p>
+          <p className={styles.banner_number}>13</p>
           <p className={styles.banner_text}>лет в HR-службе</p>
         </div>
         <div className={styles.banner_card}>

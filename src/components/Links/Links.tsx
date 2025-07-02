@@ -12,12 +12,9 @@ function Links() {
           <div className={styles.links_wrapper}>
             <h4 className={styles.links_title}>Видео</h4>
             <p className={styles.links_item}>
-              По запросу -{" "}
-              <a
-                className={styles.link}
-                href='https://2meetup.in/evgeniiaorlova/meet'
-              >
-                связаться
+              По запросу{" "}
+              <a className={styles.link} href='https://t.me/HR_OrlovaEV'>
+                +79253710130
               </a>
             </p>
           </div>
@@ -26,6 +23,7 @@ function Links() {
             <a
               href='https://hightech.plus/2023/09/07/poleznii-hr-tech-vibiraem-po-dlya-avtomatizacii-rekrutinga'
               className={styles.link}
+              target='blank'
             >
               Полезный HR-Tech: выбираем ПО для автоматизации рекрутинга
             </a>
@@ -36,7 +34,11 @@ function Links() {
           <div className={styles.social_tg}>
             <div className={styles.social_item}>
               <img src={TG} alt='' />
-              <a className={styles.link} href='https://t.me/HR_podpiska'>
+              <a
+                className={styles.link}
+                href='https://t.me/HR_podpiska'
+                target='blank'
+              >
                 авторский канал HR BP и HR Advisor о буднях, инсайтах и мыслях
               </a>
             </div>
@@ -45,6 +47,7 @@ function Links() {
               <a
                 className={styles.link}
                 href='https://t.me/orlova_reccomendation'
+                target='blank'
               >
                 закрытый канал с резюме
               </a>
@@ -56,6 +59,7 @@ function Links() {
               <a
                 className={styles.link}
                 href='https://001smiling.github.io/Valerchik/'
+                target='blank'
               >
                 бот для поиска работы
               </a>

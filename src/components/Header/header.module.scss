@@ -2,7 +2,7 @@
 
 .header {
   position: fixed;
-  z-index: 99999;
+  z-index: 9999;
   width: 100vw;
   max-width: 1920px;
   background: linear-gradient(
@@ -75,6 +75,7 @@
   font-size: 12px;
   line-height: 200%;
   text-transform: uppercase;
+  text-decoration: none;
   color: var.$white;
   cursor: pointer;
   transition: transform 0.5s ease-in-out;

@@ -24,7 +24,7 @@ function Footer() {
             </a>
             <div className={styles.contact_wrapper}>
               <p className={styles.contact_phone}>+7 (925) 371 01 30</p>
-              <p className={styles.contact_text}>Поддержка и сопровождение</p>
+              <p className={styles.contact_text2}>Поддержка и сопровождение</p>
             </div>
           </div>
           <a
@@ -77,7 +77,19 @@ function Footer() {
         </div>
         <div className={styles.rights}>
           <p className={styles.rights_text}>Все права защищены © 2025</p>
-          <p className={styles.rights_texts}>Сайт разработан </p>
+          <div>
+            <p className={styles.rights_text}>Дизайн сайта - АЛЕКА</p>
+            <p className={styles.rights_text}>
+              Разработка -{" "}
+              <a
+                className={styles.rights_link}
+                href='https://github.com/Nadia-HPoe'
+                target='blank'
+              >
+                Szabó Nadia
+              </a>
+            </p>
+          </div>
         </div>
       </section>
     </footer>

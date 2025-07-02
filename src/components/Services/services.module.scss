@@ -1,8 +1,8 @@
 @use "../../assets/styles/var" as var;
 
 .services {
-  width: 100vw;
-  max-width: 1920px;
+  // width: 100vw;
+  // max-width: 1920px;
   background-color: var.$dust;
   padding: 0 60px 128px;
   font-family: var.$font-inter;
@@ -53,6 +53,7 @@
   font-size: 16px;
   line-height: 200%;
   text-transform: uppercase;
+  text-decoration: none;
   color: var.$white;
   cursor: pointer;
   transition: transform 0.5s ease-in-out;

@@ -9,6 +9,7 @@ import img5 from "../../../assets/images/diploma5.jpg";
 import img6 from "../../../assets/images/diploma6.jpg";
 import img7 from "../../../assets/images/diploma7.jpg";
 import img8 from "../../../assets/images/diploma8.jpg";
+import img9 from "../../../assets/images/diploma9.jpg";
 import arrowl from "../../../assets/images/arrow_left.png";
 import arrowr from "../../../assets/images/arrow_right.png";
 type Slide = {
@@ -24,9 +25,10 @@ const slidesData: Slide[] = [
   { src: img6 },
   { src: img7 },
   { src: img8 },
+  { src: img9 },
 ];
 
-const IMAGES_PER_SCREEN = 2;
+const IMAGES_PER_SCREEN = 3;
 
 function GalleryCarousel() {
   const [page, setPage] = useState<number>(0);

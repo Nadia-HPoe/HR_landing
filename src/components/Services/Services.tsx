@@ -13,7 +13,12 @@ function Services() {
             работодателя на рынке труда. Это позволит привлечь лучших
             специалистов для вашего бизнеса. HR-Marketing
           </p>
-          <button className={styles.card_button}>записаться</button>
+          <a
+            href='https://2meetup.in/evgeniiaorlova/meet'
+            className={styles.card_button}
+          >
+            записаться
+          </a>
         </div>
         <div className={styles.card}>
           <h5 className={styles.card_title}>HR-Admin</h5>
@@ -22,7 +27,12 @@ function Services() {
             вы могли спокойно развивать свой бизнес, не волнуясь о юридических
             тонкостях
           </p>
-          <button className={styles.card_button}>записаться</button>
+          <a
+            href='https://2meetup.in/evgeniiaorlova/meet'
+            className={styles.card_button}
+          >
+            записаться
+          </a>
         </div>
         <div className={styles.card}>
           <h5 className={styles.card_title}>Delivery Recruitment</h5>
@@ -30,12 +40,17 @@ function Services() {
             Могу рассказать, как обеспечить постоянный поток кандидатов на ваши
             вакансии, а также оптимизировать процесс работы с ними
           </p>
-          <button className={styles.card_button}>записаться</button>
+          <a
+            href='https://2meetup.in/evgeniiaorlova/meet'
+            className={styles.card_button}
+          >
+            записаться
+          </a>
         </div>
       </div>
       <ul className={styles.list}>
         <span>
-          Стоимость консультации от 7000₽ <br />
+          Стоимость консультации от 10000₽ <br />
           (в зависимости от запроса):
         </span>
         <li className={styles.list_item}>первая со скидкой 50%</li>
