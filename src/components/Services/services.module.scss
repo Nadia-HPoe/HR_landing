@@ -1,8 +1,8 @@
 @use "../../assets/styles/var" as var;
 
 .services {
-  width: 100vw;
-  max-width: 1920px;
+  // width: 100vw;
+  // max-width: 1920px;
   background-color: var.$dust;
   padding: 0 60px 128px;
   font-family: var.$font-inter;
@@ -53,6 +53,7 @@
   font-size: 16px;
   line-height: 200%;
   text-transform: uppercase;
+  text-decoration: none;
   color: var.$white;
   cursor: pointer;
   transition: transform 0.5s ease-in-out;
@@ -80,4 +81,26 @@
 }
 .list_item:first-of-type {
   padding-top: 30px;
+}
+
+@media (max-width: 1919px) {
+  .card {
+    padding: 30px 50px;
+    width: 400px;
+    height: 350px;
+  }
+
+  .card_title {
+    font-size: 24px;
+  }
+
+  .card_text {
+    padding: 30px 0 40px;
+    font-size: 16px;
+  }
+  .list {
+    padding-top: 50px;
+    font-size: 20px;
+    line-height: 26px;
+  }
 }

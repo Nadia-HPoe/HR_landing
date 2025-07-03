@@ -12,7 +12,12 @@ function Banner() {
             для эффективного управления своего
             <br /> персонала в сферах sale, marketing, IT
           </p>
-          <button className={styles.button}>записаться на КОНСУЛЬТАЦИЮ</button>
+          <a
+            href='https://2meetup.in/evgeniiaorlova/meet'
+            className={styles.button}
+          >
+            записаться на КОНСУЛЬТАЦИЮ
+          </a>
         </div>
         <div className={styles.image_container}>
           <img className={styles.image} src={Image} alt='MainPhoto' />

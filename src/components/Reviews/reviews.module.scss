@@ -26,3 +26,13 @@
   line-height: 19px;
   color: var.$d-blue;
 }
+@media (max-width: 1919px) {
+  .container {
+    padding: 0 140px 150px;
+    gap: 45px;
+  }
+  .review_text {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}

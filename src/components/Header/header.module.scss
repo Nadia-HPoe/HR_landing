@@ -2,7 +2,7 @@
 
 .header {
   position: fixed;
-  z-index: 99999;
+  z-index: 9999;
   width: 100vw;
   max-width: 1920px;
   background: linear-gradient(
@@ -75,6 +75,7 @@
   font-size: 12px;
   line-height: 200%;
   text-transform: uppercase;
+  text-decoration: none;
   color: var.$white;
   cursor: pointer;
   transition: transform 0.5s ease-in-out;
@@ -83,5 +84,20 @@
     -webkit-transform: scale(1.06);
     -ms-transform: scale(1.06);
     transform: scale(1.06);
+  }
+}
+
+@media (max-width: 1919px) {
+  .header {
+    max-width: 1440px;
+    padding: 5px 100px;
+  }
+  .logo_text {
+    font-size: 16px;
+  }
+  .nav_item {
+    padding-left: 45px;
+    font-size: 14px;
+    line-height: 20px;
   }
 }

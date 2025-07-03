@@ -10,7 +10,12 @@ function FooterBanner() {
             Приглашаю вас на платную консультацию
           </p>
         </div>
-        <button className={styles.banner_button}>записаться</button>
+        <a
+          href='https://2meetup.in/evgeniiaorlova/meet'
+          className={styles.banner_button}
+        >
+          записаться
+        </a>
       </div>
     </section>
   );
