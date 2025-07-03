@@ -10,3 +10,8 @@
   line-height: 44px;
   color: var.$d-blue;
 }
+@media (max-width: 1919px) {
+  .title {
+    padding: 100px 0 40px;
+  }
+}

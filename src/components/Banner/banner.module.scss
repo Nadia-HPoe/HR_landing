@@ -77,3 +77,16 @@
   border-radius: 600px;
   box-shadow: 0px 5px 42px 10px rgba(202, 214, 228, 0.62);
 }
+@media (max-width: 1919px) {
+  .banner {
+    top: 90px;
+    margin-bottom: 75px;
+    height: 570px;
+  }
+  .title {
+    font-size: 48px;
+  }
+  .text {
+    font-size: 20px;
+  }
+}

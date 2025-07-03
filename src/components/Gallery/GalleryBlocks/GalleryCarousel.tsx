@@ -17,15 +17,15 @@ type Slide = {
 };
 
 const slidesData: Slide[] = [
-  { src: img1 },
-  { src: img2 },
-  { src: img3 },
-  { src: img4 },
-  { src: img5 },
-  { src: img6 },
-  { src: img7 },
   { src: img8 },
   { src: img9 },
+  { src: img7 },
+  { src: img5 },
+  { src: img1 },
+  { src: img4 },
+  { src: img3 },
+  { src: img2 },
+  { src: img6 },
 ];
 
 const IMAGES_PER_SCREEN = 3;

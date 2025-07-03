@@ -7,7 +7,7 @@
 
 .banner {
   background-color: var.$l-gray;
-  color: var.$blue;
+  color: var.$d-blue;
   font-family: var.$font-inter;
   font-weight: 700;
 }
@@ -86,7 +86,7 @@
 
 .button {
   padding: 15px;
-  background-color: var.$white;
+  background-color: var.$l-gray;
   border: none;
   cursor: pointer;
   & > img {
@@ -99,5 +99,27 @@
   &:disabled {
     opacity: 0.3;
     cursor: not-allowed;
+  }
+}
+
+@media (max-width: 1919px) {
+  .info_container {
+    padding: 0 248px 200px;
+  }
+  .info_subtitle {
+    font-size: 18px;
+  }
+  .info_text {
+    font-size: 14px;
+  }
+  .carousel {
+    padding: 0 70px 150px;
+  }
+  .slide_img {
+    max-width: 380px;
+    max-height: 260px;
+  }
+  .button {
+    padding: 10px;
   }
 }

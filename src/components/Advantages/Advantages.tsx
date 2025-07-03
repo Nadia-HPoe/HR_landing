@@ -18,7 +18,7 @@ function Advantages() {
         </div>
         <div className={styles.card}>
           <img className={styles.icon} src={Icon2} alt='' />
-          <p className={styles.text}>Индивидуальное подход</p>
+          <p className={styles.text}>Индивидуальный подход</p>
         </div>
         <div className={styles.card}>
           <img className={styles.icon} src={Icon3} alt='' />
@@ -27,7 +27,7 @@ function Advantages() {
         <div className={styles.card}>
           <img className={styles.icon2} src={Icon4} alt='' />
           <p className={styles.text}>
-            Вы получаете 10 % скидку на повторное обращение
+            Вы получаете 10% скидку на повторное обращение
           </p>
         </div>
         <div className={styles.card}>

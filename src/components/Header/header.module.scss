@@ -86,3 +86,18 @@
     transform: scale(1.06);
   }
 }
+
+@media (max-width: 1919px) {
+  .header {
+    max-width: 1440px;
+    padding: 5px 100px;
+  }
+  .logo_text {
+    font-size: 16px;
+  }
+  .nav_item {
+    padding-left: 45px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+}

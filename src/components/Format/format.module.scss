@@ -84,3 +84,14 @@
   line-height: 24px;
   color: var.$blue;
 }
+@media (max-width: 1919px) {
+  .content h3 {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .content p {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}

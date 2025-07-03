@@ -57,3 +57,15 @@
     width: 46%;
   }
 }
+
+@media (max-width: 1919px) {
+  .info_content {
+    padding: 0 130px 70px;
+  }
+
+  .list_item {
+    & > p {
+      width: 60%;
+    }
+  }
+}
