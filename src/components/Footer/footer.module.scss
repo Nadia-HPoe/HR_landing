@@ -1,9 +1,5 @@
 @use "../../assets/styles/var" as var;
 
-// .footer {
-//   width: 100vw;
-//   max-width: 1920px;
-// }
 .banner {
   background-color: var.$dust;
   display: flex;
@@ -129,5 +125,27 @@
   }
   .rights {
     font-size: 10px;
+  }
+}
+@media (max-width: 1439px) {
+  .banner_wrapper {
+    padding: 50px 0;
+  }
+  .banner_title {
+    font-size: 20px;
+    line-height: 26px;
+  }
+  .banner_paragraph {
+    font-size: 16px;
+  }
+  .container {
+    padding: 55px 50px 29px;
+  }
+
+  .contact_phone {
+    font-size: 20px;
+  }
+  .contacts {
+    column-gap: 50px;
   }
 }

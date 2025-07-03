@@ -90,3 +90,28 @@
     font-size: 20px;
   }
 }
+
+@media (max-width: 1439px) {
+  .banner {
+    top: 60px;
+    margin-bottom: 35px;
+  }
+  .wrapper {
+    justify-content: space-between;
+    padding: 80px 50px;
+  }
+
+  .title {
+    font-size: 36px;
+  }
+  .text {
+    font-size: 18px;
+  }
+  .image {
+    max-width: 450px;
+  }
+  .button {
+    width: 300px;
+    font-size: 12px;
+  }
+}
