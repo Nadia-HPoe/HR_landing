@@ -1,10 +1,5 @@
 @use "../../assets/styles/var" as var;
 
-// .gallery {
-//   width: 100vw;
-//   max-width: 1920px;
-// }
-
 .banner {
   background-color: var.$l-gray;
   color: var.$d-blue;
@@ -121,5 +116,26 @@
   }
   .button {
     padding: 10px;
+  }
+}
+@media (max-width: 1439px) {
+  .banner_container {
+    padding: 30px 100px;
+  }
+  .banner_number {
+    font-size: 50px;
+    line-height: 63px;
+  }
+  .banner_text {
+    font-size: 14px;
+  }
+  .info_container {
+    padding: 0 248px 100px;
+  }
+  .sliders {
+    align-items: center;
+  }
+  .carousel {
+    padding: 0 50px 100px;
   }
 }

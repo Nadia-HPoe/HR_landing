@@ -58,3 +58,11 @@
     padding: 50px 150px 140px;
   }
 }
+@media (max-width: 1439px) {
+  .container {
+    padding: 50px 100px 100px;
+  }
+  .social_item {
+    width: 80%;
+  }
+}

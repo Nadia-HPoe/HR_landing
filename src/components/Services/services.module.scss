@@ -104,3 +104,10 @@
     line-height: 26px;
   }
 }
+
+@media (max-width: 1439px) {
+  .cards {
+    grid-template-columns: repeat(1, 450px);
+    gap: 50px;
+  }
+}
