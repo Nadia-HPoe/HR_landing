@@ -90,3 +90,32 @@
     gap: 30px;
   }
 }
+@media (max-width: 1099px) {
+  .about {
+    padding: 0 50px 50px;
+  }
+  .subtitle {
+    font-size: 24px;
+    line-height: 30px;
+    padding: 0 0 45px;
+  }
+  .about_container {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 45px;
+  }
+  .image {
+    width: 400px;
+  }
+
+  .about_wrapper {
+    align-items: center;
+  }
+  .about_subtitle {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .about_paragraph {
+    text-align: center;
+  }
+}

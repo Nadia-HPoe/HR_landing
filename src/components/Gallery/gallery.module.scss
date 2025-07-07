@@ -139,3 +139,36 @@
     padding: 0 50px 100px;
   }
 }
+@media (max-width: 1099px) {
+  .banner_container {
+    padding: 30px 50px;
+  }
+  .banner_number {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .banner_text {
+    font-size: 12px;
+  }
+  .info_container {
+    padding: 0 50px 50px;
+  }
+  .info_cards {
+    grid-template-columns: repeat(2, 300px);
+    grid-gap: 50px;
+  }
+  .info_card {
+    padding: 20px;
+  }
+
+  .info_text {
+    font-size: 14px;
+  }
+  .carousel {
+    padding: 0 0 50px;
+  }
+  .slide_img {
+    max-width: 300px;
+    max-height: 200px;
+  }
+}

@@ -18,7 +18,6 @@
   align-items: center;
   color: var.$blue;
 }
-
 .logo_text {
   font-family: "Times New Roman", Times, serif;
   font-weight: 700;
@@ -26,13 +25,11 @@
   line-height: 18px;
   font-style: italic;
 }
-
 .list {
   display: flex;
   list-style: none;
   justify-content: space-between;
 }
-
 .nav_item {
   padding-left: 70px;
   text-transform: uppercase;
@@ -49,19 +46,19 @@
     color: var.$d-blue;
   }
 }
-
 .contact {
   display: flex;
   align-items: center;
   gap: 35px;
 }
-
+.contact_mobile {
+  display: none;
+}
 .phone {
   font-weight: 700;
   font-size: 14px;
   line-height: 17px;
 }
-
 .button {
   display: flex;
   flex-direction: row;
@@ -86,7 +83,39 @@
     transform: scale(1.06);
   }
 }
+.burger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 2rem;
+  height: 2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 10;
+}
+.bar {
+  width: 2rem;
+  height: 0.25rem;
+  background-color: var.$d-blue;
+  border-radius: 10px;
+  transition: all 0.3s linear;
+  position: relative;
+  transform-origin: 1px;
+}
+.burger.open .bar:nth-child(1) {
+  transform: rotate(45deg);
+}
+.burger.open .bar:nth-child(2) {
+  opacity: 0;
+  transform: translateX(20px);
+}
+.burger.open .bar:nth-child(3) {
+  transform: rotate(-45deg);
+}
 
+/////////////////////adaptive/////////////////////////////
 @media (max-width: 1919px) {
   .header {
     max-width: 1440px;
@@ -110,5 +139,61 @@
     padding-left: 30px;
     font-size: 12px;
     line-height: 16px;
+  }
+}
+@media (max-width: 1099px) {
+  .header {
+    max-width: 768px;
+    padding: 15px 40px;
+  }
+  .logo_text {
+    font-size: 22px;
+    line-height: 18px;
+  }
+  .contact {
+    display: none;
+  }
+  .contact_mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .burger {
+    display: flex;
+  }
+  .nav {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: hwb(0 100% 0% / 0.925);
+    width: 768px;
+    flex-direction: column;
+    padding: 1rem 2rem;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 9;
+  }
+  .nav_open {
+    display: flex;
+    align-items: center;
+  }
+  .list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 30px;
+  }
+  .nav_item {
+    margin-top: 20px;
+    font-size: 18px;
+    line-height: 28px;
+  }
+  .phone {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .button {
+    padding: 12px 44px;
+    font-size: 16px;
   }
 }
