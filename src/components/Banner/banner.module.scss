@@ -115,3 +115,27 @@
     font-size: 12px;
   }
 }
+@media (max-width: 1099px) {
+  .banner {
+    height: 450px;
+  }
+
+  .wrapper {
+    padding: 50px 30px;
+  }
+  .title {
+    font-size: 30px;
+  }
+  .text {
+    padding: 20px 0;
+    font-size: 16px;
+  }
+  .image {
+    max-width: 350px;
+  }
+  .button {
+    padding: 15px 25px;
+    width: 250px;
+    font-size: 11px;
+  }
+}

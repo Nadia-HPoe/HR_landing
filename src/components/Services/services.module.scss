@@ -1,8 +1,6 @@
 @use "../../assets/styles/var" as var;
 
 .services {
-  // width: 100vw;
-  // max-width: 1920px;
   background-color: var.$dust;
   padding: 0 60px 128px;
   font-family: var.$font-inter;
@@ -109,5 +107,29 @@
   .cards {
     grid-template-columns: repeat(1, 450px);
     gap: 50px;
+    justify-items: center;
+  }
+}
+
+@media (max-width: 1099px) {
+  .services {
+    padding: 0 60px 60px;
+  }
+  .card {
+    padding: 15px 25px;
+    width: 400px;
+    height: 350px;
+  }
+
+  .card_text {
+    padding: 0;
+  }
+  .card_button {
+    align-self: center;
+    width: 70%;
+    font-size: 14px;
+  }
+  .list {
+    font-size: 18px;
   }
 }

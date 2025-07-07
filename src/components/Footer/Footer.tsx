@@ -15,64 +15,84 @@ function Footer() {
       <section className={styles.container}>
         <div className={styles.contacts}>
           <div className={styles.contact_item}>
-            <a href='https://wa.me/79253710130' target='blank'>
-              <img src={WA} alt='' className={styles.contact_icon} />
-            </a>
-            <a href='https://t.me/EvgeniiaOrlova' target='blank'>
-              {" "}
-              <img src={TG} alt='' className={styles.contact_icon} />
-            </a>
-            <div className={styles.contact_wrapper}>
-              <p className={styles.contact_phone}>+7 (925) 371 01 30</p>
-              <p className={styles.contact_text2}>Поддержка и сопровождение</p>
+            <div className={styles.contact_item_wrapper}>
+              <a href='https://wa.me/79253710130' target='blank'>
+                <img src={WA} alt='' className={styles.contact_icon} />
+              </a>
+              <a href='https://t.me/EvgeniiaOrlova' target='blank'>
+                {" "}
+                <img src={TG} alt='' className={styles.contact_icon} />
+              </a>
+              <div className={styles.contact_wrapper}>
+                <p className={styles.contact_phone}>+7 (925) 371 01 30</p>
+                <p className={styles.contact_text2}>
+                  Поддержка и сопровождение
+                </p>
+              </div>
             </div>
-          </div>
-          <a
-            href='https://t.me/HR_podpiska'
-            target='blank'
-            className={styles.contact_item}
-          >
-            <img src={TG} alt='' className={styles.contact_icon} />
-            <p className={styles.contact_text}>
-              авторский канал HR BP и HR Advisor о буднях, инсайтах и мыслях
-            </p>
-          </a>
-          <a
-            href='https://001smiling.github.io/Valerchik/'
-            className={styles.contact_item}
-          >
-            <img src={Bot} alt='' className={styles.contact_icon} />
-            <p className={styles.contact_text}>бот для поиска работы</p>
-          </a>
-          <div className={styles.contact_item}>
             <p className={styles.contact_paragraph}>
               Работаю в удаленном формате по РФ
             </p>
           </div>
-          <a
-            href='https://t.me/orlova_reccomendation'
-            target='blank'
-            className={styles.contact_item}
-          >
-            <img src={TG} alt='' className={styles.contact_icon} />
-            <p className={styles.contact_text}>закрытый канал с резюме</p>
-          </a>
           <div className={styles.contact_item}>
             <a
-              href='https://tenchat.ru/evgeniaOrlova?utm_source=94da7879-c200-45b8-9d3b-7596a95bd6cbhttps://tenchat.ru/0225905?utm_source=94da7879-c200-45b8-9d3b-7596a95bd6cb'
+              href='https://t.me/HR_podpiska'
               target='blank'
+              className={styles.contact_link}
             >
-              <img src={Teen} alt='' />
+              <img src={TG} alt='' className={styles.contact_icon} />
+              <p className={styles.contact_text}>
+                авторский канал HR BP и HR Advisor о буднях, инсайтах и мыслях
+              </p>
             </a>
-            <a href='https://2meetup.in/evgeniiaorlova' target='blank'>
-              <img src={Meet} alt='' />
+
+            <a
+              href='https://t.me/orlova_reccomendation'
+              target='blank'
+              className={styles.contact_link}
+            >
+              <img src={TG} alt='' className={styles.contact_icon} />
+              <p className={styles.contact_text}>закрытый канал с резюме</p>
             </a>
-            <a href='https://linkedin.com/in/eorlova67' target='blank'>
-              <img src={Link} alt='' />
+          </div>
+          <div className={styles.contact_item}>
+            <a
+              href='https://001smiling.github.io/Valerchik/'
+              className={styles.contact_link}
+            >
+              <img src={Bot} alt='' className={styles.contact_icon} />
+              <p className={styles.contact_text}>бот для поиска работы</p>
             </a>
-            <a href='https://career.habr.com/orlovatech' target='blank'>
-              <img src={Habr} alt='' />
-            </a>
+            <div className={styles.contact_item_wrapper}>
+              <a
+                href='https://tenchat.ru/evgeniaOrlova?utm_source=94da7879-c200-45b8-9d3b-7596a95bd6cbhttps://tenchat.ru/0225905?utm_source=94da7879-c200-45b8-9d3b-7596a95bd6cb'
+                target='blank'
+                className={styles.contact_link}
+              >
+                <img src={Teen} alt='' />
+              </a>
+              <a
+                href='https://2meetup.in/evgeniiaorlova'
+                target='blank'
+                className={styles.contact_link}
+              >
+                <img src={Meet} alt='' />
+              </a>
+              <a
+                href='https://linkedin.com/in/eorlova67'
+                target='blank'
+                className={styles.contact_link}
+              >
+                <img src={Link} alt='' />
+              </a>
+              <a
+                href='https://career.habr.com/orlovatech'
+                target='blank'
+                className={styles.contact_link}
+              >
+                <img src={Habr} alt='' />
+              </a>
+            </div>
           </div>
         </div>
         <div className={styles.rights}>

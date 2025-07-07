@@ -1,16 +1,11 @@
 @use "../../assets/styles/var" as var;
 
-// .info {
-//   width: 100vw;
-//   max-width: 1920px;
-// }
-
 .info_banner {
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: var.$white;
-  height: 240px;
+  margin: 70px;
 }
 
 .info_paragraph {
@@ -87,6 +82,27 @@
     & > p {
       font-size: 14px;
       width: 71%;
+    }
+  }
+}
+@media (max-width: 1099px) {
+  .info_paragraph {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .info_content {
+    padding: 0 50px 30px;
+  }
+  .list_item {
+    gap: 10px;
+    & > span {
+      font-size: 18px;
+      width: 35px;
+      height: 35px;
+    }
+    & > p {
+      font-size: 10px;
+      width: 69%;
     }
   }
 }
