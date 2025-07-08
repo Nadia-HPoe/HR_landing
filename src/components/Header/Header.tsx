@@ -1,44 +1,76 @@
+import { useState } from "react";
 import styles from "./header.module.scss";
 
+type MenuItem = {
+  label: string;
+  targetId: string;
+};
+const menu: MenuItem[] = [
+  { label: "Для кого", targetId: "for" },
+  { label: "Обо мне", targetId: "about" },
+  { label: "Услуги", targetId: "service" },
+  { label: "Отзывы", targetId: "review" },
+  { label: "FAQ", targetId: "faq" },
+  { label: "Контакты", targetId: "contact" },
+];
+
 function Header() {
+  const [menuOpen, setMenuOpen] = useState(false);
+  const toggleMenu = () => setMenuOpen((prev) => !prev);
+
+  const handleScroll = (id: string) => {
+    const el = document.getElementById(id);
+    if (el) {
+      el.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  };
+  const closeMenu = () => {
+    setMenuOpen(false);
+  };
+
   return (
     <header className={styles.header}>
       <div className={styles.logo}>
         <p className={styles.logo_text}>Евгения Орлова</p>
       </div>
-      <nav className={styles.nav}>
+      <button
+        className={`${styles.burger} ${menuOpen ? styles.open : ""}`}
+        aria-label='Toggle menu'
+        aria-expanded={menuOpen}
+        onClick={toggleMenu}
+        type='button'
+      >
+        <span className={styles.bar}></span>
+        <span className={styles.bar}></span>
+        <span className={styles.bar}></span>
+      </button>
+      <nav className={`${styles.nav} ${menuOpen ? styles.nav_open : ""}`}>
         <ul className={styles.list}>
-          <li className={styles.nav_item}>
-            <a className={styles.nav_item_link} href='#for'>
-              Для кого
-            </a>
-          </li>
-          <li className={styles.nav_item}>
-            <a className={styles.nav_item_link} href='#about'>
-              Обо мне
-            </a>
-          </li>
-          <li className={styles.nav_item}>
-            <a className={styles.nav_item_link} href='#service'>
-              Услуги
-            </a>
-          </li>
-          <li className={styles.nav_item}>
-            <a className={styles.nav_item_link} href='#review'>
-              Отзывы
-            </a>
-          </li>
-          <li className={styles.nav_item}>
-            <a className={styles.nav_item_link} href='#faq'>
-              FAQ
-            </a>
-          </li>
-          <li className={styles.nav_item}>
-            <a className={styles.nav_item_link} href='#contact'>
-              Контакты
-            </a>
-          </li>
+          {menu.map((item) => (
+            <li className={styles.nav_item} onClick={closeMenu}>
+              <a
+                className={styles.nav_item_link}
+                key={item.targetId}
+                onClick={() => handleScroll(item.targetId)}
+              >
+                {item.label}
+              </a>
+            </li>
+          ))}
         </ul>
+        <div className={styles.contact_mobile}>
+          <p className={styles.phone}> +7 (925) 371 01 30</p>
+          <a href='tel:+79253710130' className={styles.phone_nobile}>
+            {" "}
+            +7 (925) 371 01 30
+          </a>
+          <a
+            href='https://2meetup.in/evgeniiaorlova/meet'
+            className={styles.button}
+          >
+            Консультация
+          </a>
+        </div>
       </nav>
       <div className={styles.contact}>
         <p className={styles.phone}> +7 (925) 371 01 30</p>

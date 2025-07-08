@@ -1,12 +1,9 @@
 @use "../../assets/styles/var" as var;
 
 .about {
-  // width: 100vw;
-  // max-width: 1920px;
   background-color: var.$white;
   padding: 0 150px 107px 220px;
 }
-
 .subtitle {
   padding: 0 0 90px;
   text-align: center;
@@ -17,13 +14,14 @@
   font-size: 30px;
   line-height: 40px;
 }
-
 .image {
   width: 490px;
   height: auto;
   border-radius: 15px;
 }
-
+.image_mobile {
+  display: none;
+}
 .about_container {
   display: grid;
   grid-template-columns: 550px 550px;
@@ -35,7 +33,6 @@
   justify-content: space-around;
   gap: 60px;
 }
-
 .about_paragraph,
 .about_list {
   font-family: var.$font-inter;
@@ -55,7 +52,6 @@
     padding-top: 20px;
   }
 }
-
 .about_subtitle {
   color: var.$blue;
   font-family: "Times New Roman", Times, serif;
@@ -63,4 +59,104 @@
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
+}
+
+@media (max-width: 1439px) {
+  .about {
+    padding: 0 50px 100px;
+  }
+
+  .subtitle {
+    font-size: 26px;
+    line-height: 32px;
+  }
+  .image {
+    width: 450px;
+  }
+  .about_list_item {
+    padding-top: 5px;
+  }
+  .about_subtitle {
+    font-size: 20px;
+    line-height: 26px;
+  }
+  .about_container {
+    grid-template-columns: 500px 500px;
+  }
+  .about_wrapper {
+    gap: 30px;
+  }
+}
+
+@media (max-width: 1099px) {
+  .about {
+    padding: 0 50px 50px;
+  }
+  .subtitle {
+    font-size: 24px;
+    line-height: 30px;
+    padding: 0 0 45px;
+  }
+  .about_container {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 45px;
+  }
+  .image {
+    width: 400px;
+  }
+
+  .about_wrapper {
+    align-items: center;
+  }
+  .about_subtitle {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .about_paragraph {
+    text-align: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .about {
+    padding: 0 10px 50px;
+  }
+  .subtitle {
+    font-size: 18px;
+    line-height: 24px;
+    padding: 0 0 45px;
+  }
+  .about_paragraph {
+    text-align: left;
+    font-size: 11px;
+    line-height: 18px;
+  }
+  .image_wrapper {
+    display: none;
+  }
+  .image_mobile {
+    display: flex;
+    float: right;
+    margin-left: 5px;
+    width: 179px;
+    border-radius: 20px;
+    height: auto;
+  }
+  .about_subtitle {
+    padding: 0 45px;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+  }
+  .about_list {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .about_list_item {
+    padding-top: 5px;
+    &:first-of-type {
+      padding-top: 20px;
+    }
+  }
 }

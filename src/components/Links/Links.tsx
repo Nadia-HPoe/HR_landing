@@ -28,7 +28,6 @@ function Links() {
               Полезный HR-Tech: выбираем ПО для автоматизации рекрутинга
             </a>
           </div>
-          <div></div>
         </div>
         <div className={styles.block_social}>
           <div className={styles.social_tg}>

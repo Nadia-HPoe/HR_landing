@@ -1,8 +1,6 @@
 @use "../../assets/styles/var" as var;
 
 .services {
-  // width: 100vw;
-  // max-width: 1920px;
   background-color: var.$dust;
   padding: 0 60px 128px;
   font-family: var.$font-inter;
@@ -102,5 +100,64 @@
     padding-top: 50px;
     font-size: 20px;
     line-height: 26px;
+  }
+}
+
+@media (max-width: 1439px) {
+  .cards {
+    grid-template-columns: repeat(1, 450px);
+    gap: 50px;
+    justify-items: center;
+  }
+}
+
+@media (max-width: 1099px) {
+  .services {
+    padding: 0 60px 60px;
+  }
+  .card {
+    padding: 15px 25px;
+    width: 400px;
+    height: 350px;
+  }
+
+  .card_text {
+    padding: 0;
+  }
+  .card_button {
+    align-self: center;
+    width: 70%;
+    font-size: 14px;
+  }
+  .list {
+    font-size: 18px;
+  }
+}
+@media (max-width: 767px) {
+  .services {
+    padding: 0 20px 20px;
+  }
+  .cards {
+    grid-template-columns: repeat(1, 300px);
+  }
+  .card {
+    padding: 10px 15px;
+    width: 300px;
+    height: 250px;
+  }
+  .card_title {
+    font-size: 18px;
+  }
+  .card_text {
+    padding: 10px 0 10px;
+    font-size: 13px;
+  }
+  .card_button {
+    padding: 9px 77px;
+    font-size: 10px;
+  }
+  .list {
+    font-size: 15px;
+    padding-bottom: 20px;
   }
 }

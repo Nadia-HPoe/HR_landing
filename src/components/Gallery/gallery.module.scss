@@ -1,10 +1,5 @@
 @use "../../assets/styles/var" as var;
 
-// .gallery {
-//   width: 100vw;
-//   max-width: 1920px;
-// }
-
 .banner {
   background-color: var.$l-gray;
   color: var.$d-blue;
@@ -121,5 +116,97 @@
   }
   .button {
     padding: 10px;
+  }
+}
+
+@media (max-width: 1439px) {
+  .banner_container {
+    padding: 30px 100px;
+  }
+  .banner_number {
+    font-size: 50px;
+    line-height: 63px;
+  }
+  .banner_text {
+    font-size: 14px;
+  }
+  .info_container {
+    padding: 0 248px 100px;
+  }
+  .sliders {
+    align-items: center;
+  }
+  .carousel {
+    padding: 0 50px 100px;
+  }
+}
+
+@media (max-width: 1099px) {
+  .banner_container {
+    padding: 30px 50px;
+  }
+  .banner_number {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .banner_text {
+    font-size: 12px;
+  }
+  .info_container {
+    padding: 0 50px 50px;
+  }
+  .info_cards {
+    grid-template-columns: repeat(2, 300px);
+    grid-gap: 50px;
+  }
+  .info_card {
+    padding: 20px;
+  }
+
+  .info_text {
+    font-size: 14px;
+  }
+  .carousel {
+    padding: 0 0 50px;
+  }
+  .slide_img {
+    max-width: 300px;
+    max-height: 200px;
+  }
+}
+
+@media (max-width: 767px) {
+  .banner_container {
+    padding: 10px 5px;
+  }
+  .banner_number {
+    font-size: 26px;
+    line-height: 32px;
+  }
+  .banner_text {
+    font-size: 8px;
+  }
+  .info_container {
+    padding: 0 35px 50px;
+  }
+  .info_cards {
+    grid-template-columns: repeat(1, 300px);
+  }
+  .info_card {
+    padding: 20px;
+  }
+  .info_subtitle {
+    font-size: 16px;
+  }
+  .info_text {
+    padding-top: 10px;
+    font-size: 12px;
+  }
+  .button {
+    padding: 5px;
+    background-color: transparent;
+    & > img {
+      width: 10px;
+    }
   }
 }

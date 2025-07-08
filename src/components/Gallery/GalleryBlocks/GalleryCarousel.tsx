@@ -1,4 +1,5 @@
 import { useState } from "react";
+import useWindowWidth from "../../../hooks/useWindowWidth";
 import styles from "../gallery.module.scss";
 import GalleryItem from "./GalleryItem";
 import img1 from "../../../assets/images/diploma1.jpg";
@@ -28,11 +29,17 @@ const slidesData: Slide[] = [
   { src: img6 },
 ];
 
-const IMAGES_PER_SCREEN = 3;
-
 function GalleryCarousel() {
-  const [page, setPage] = useState<number>(0);
+  const width = useWindowWidth();
 
+  let IMAGES_PER_SCREEN = 3;
+  if (width <= 767) {
+    IMAGES_PER_SCREEN = 1;
+  } else if (width <= 1439) {
+    IMAGES_PER_SCREEN = 2;
+  }
+
+  const [page, setPage] = useState<number>(0);
   const totalPages = Math.ceil(slidesData.length / IMAGES_PER_SCREEN);
 
   const handlePrev = () => {
