@@ -28,8 +28,8 @@ const GalleryItem: React.FC<SlideProps> = ({ src }) => {
             src={src}
             alt='Preview'
             style={{
-              maxWidth: "90vw",
-              maxHeight: "80vh",
+              maxWidth: "70vw",
+              maxHeight: "70vh",
               display: "block",
               margin: "0 auto",
             }}

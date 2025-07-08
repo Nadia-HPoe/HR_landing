@@ -41,6 +41,7 @@
   text-decoration: none;
   color: inherit;
   transition: all 0.6s;
+  cursor: pointer;
   &:hover,
   &:active {
     color: var.$d-blue;
@@ -58,6 +59,9 @@
   font-weight: 700;
   font-size: 14px;
   line-height: 17px;
+}
+.phone_nobile {
+  display: none;
 }
 .button {
   display: flex;
@@ -94,6 +98,11 @@
   cursor: pointer;
   padding: 0;
   z-index: 10;
+  &:hover {
+    .bar {
+      background-color: var.$blue;
+    }
+  }
 }
 .bar {
   width: 2rem;
@@ -195,5 +204,49 @@
   .button {
     padding: 12px 44px;
     font-size: 16px;
+  }
+}
+@media (max-width: 767px) {
+  .header {
+    max-width: 390px;
+    padding: 15px 15px;
+  }
+  .logo_text {
+    font-size: 20px;
+  }
+  .nav {
+    width: 390px;
+    flex-direction: column;
+    padding: 30px 20px;
+  }
+  .list {
+    grid-template-columns: 1fr;
+    align-self: start;
+  }
+  .nav_item {
+    margin-top: 20px;
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .phone {
+    display: none;
+  }
+  .phone_nobile {
+    display: flex;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    font-family: var.$font-inter;
+    color: var.$blue;
+    transition: all 0.6s;
+    &:hover,
+    &:active {
+      color: var.$d-blue;
+    }
+  }
+  .button {
+    padding: 10px 36px;
+    font-size: 14px;
   }
 }
