@@ -118,6 +118,7 @@
     padding: 10px;
   }
 }
+
 @media (max-width: 1439px) {
   .banner_container {
     padding: 30px 100px;
@@ -139,6 +140,7 @@
     padding: 0 50px 100px;
   }
 }
+
 @media (max-width: 1099px) {
   .banner_container {
     padding: 30px 50px;
@@ -170,5 +172,41 @@
   .slide_img {
     max-width: 300px;
     max-height: 200px;
+  }
+}
+
+@media (max-width: 767px) {
+  .banner_container {
+    padding: 10px 5px;
+  }
+  .banner_number {
+    font-size: 26px;
+    line-height: 32px;
+  }
+  .banner_text {
+    font-size: 8px;
+  }
+  .info_container {
+    padding: 0 35px 50px;
+  }
+  .info_cards {
+    grid-template-columns: repeat(1, 300px);
+  }
+  .info_card {
+    padding: 20px;
+  }
+  .info_subtitle {
+    font-size: 16px;
+  }
+  .info_text {
+    padding-top: 10px;
+    font-size: 12px;
+  }
+  .button {
+    padding: 5px;
+    background-color: transparent;
+    & > img {
+      width: 10px;
+    }
   }
 }

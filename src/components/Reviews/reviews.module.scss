@@ -42,3 +42,15 @@
     align-items: center;
   }
 }
+@media (max-width: 767px) {
+  .container {
+    padding: 0 0 50px;
+  }
+  .review {
+    width: 308px;
+  }
+  .review_text {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}

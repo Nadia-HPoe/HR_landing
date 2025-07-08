@@ -53,3 +53,24 @@
     grid-template-columns: repeat(2, 297px);
   }
 }
+@media (max-width: 767px) {
+  .cards {
+    padding: 0 0 50px;
+    grid-template-columns: repeat(1, 290px);
+  }
+  .card {
+    width: 290px;
+    gap: 10px;
+    font-size: 14px;
+    line-height: 19px;
+  }
+  .icon2 {
+    padding-right: 7px;
+    width: 35px;
+    height: auto;
+  }
+  .icon {
+    width: 35px;
+    height: auto;
+  }
+}
