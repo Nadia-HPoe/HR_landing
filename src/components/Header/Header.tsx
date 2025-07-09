@@ -47,7 +47,11 @@ function Header() {
       <nav className={`${styles.nav} ${menuOpen ? styles.nav_open : ""}`}>
         <ul className={styles.list}>
           {menu.map((item) => (
-            <li className={styles.nav_item} onClick={closeMenu}>
+            <li
+              className={styles.nav_item}
+              key={item.targetId}
+              onClick={closeMenu}
+            >
               <a
                 className={styles.nav_item_link}
                 key={item.targetId}

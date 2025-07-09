@@ -12,10 +12,21 @@ import Links from "./components/Links/Links";
 import Reviews from "./components/Reviews/Reviews";
 import Services from "./components/Services/Services";
 
+import "vanilla-cookieconsent/dist/cookieconsent.css";
+import CookieConsentComponent from "../src/components/CookieConsent.tsx";
+
+declare global {
+  interface Window {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    gtag?: (...args: any[]) => void;
+  }
+}
+
 function App() {
   return (
     <>
       <div className={styles.app}>
+        <CookieConsentComponent />
         <Header />
         <Banner />
         <Info />
