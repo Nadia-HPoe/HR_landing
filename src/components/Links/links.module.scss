@@ -3,7 +3,6 @@
 .links {
   font-family: var.$font-inter;
 }
-
 .container {
   padding: 0 287px 140px;
   display: flex;
@@ -12,7 +11,6 @@
   gap: 66px;
   color: var.$d-blue;
 }
-
 .block_links,
 .block_social {
   display: grid;
@@ -25,7 +23,6 @@
   font-size: 20px;
   line-height: 24px;
 }
-
 .links_item {
   font-weight: 400;
   font-size: 16px;
@@ -53,11 +50,13 @@
     // text-decoration: underline;
   }
 }
+
 @media (max-width: 1919px) {
   .container {
     padding: 50px 150px 140px;
   }
 }
+
 @media (max-width: 1439px) {
   .container {
     padding: 50px 50px 100px;
@@ -66,6 +65,7 @@
     width: 80%;
   }
 }
+
 @media (max-width: 767px) {
   .container {
     padding: 20px 20px 100px;

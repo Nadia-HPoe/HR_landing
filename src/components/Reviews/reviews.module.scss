@@ -3,7 +3,6 @@
 .reviews {
   background-color: var.$white;
 }
-
 .container {
   padding: 0 186px 197px;
   display: flex;
@@ -26,6 +25,7 @@
   line-height: 19px;
   color: var.$d-blue;
 }
+
 @media (max-width: 1919px) {
   .container {
     padding: 0 140px 150px;
@@ -36,12 +36,14 @@
     line-height: 18px;
   }
 }
+
 @media (max-width: 1439px) {
   .container {
     flex-direction: column;
     align-items: center;
   }
 }
+
 @media (max-width: 767px) {
   .container {
     padding: 0 0 50px;
