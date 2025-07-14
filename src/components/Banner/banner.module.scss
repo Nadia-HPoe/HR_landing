@@ -77,6 +77,7 @@
     margin-bottom: 69px;
     height: 570px;
   }
+
   .title {
     font-size: 48px;
   }
@@ -116,14 +117,19 @@
   }
 
   .wrapper {
+    align-items: end;
     padding: 50px 30px;
   }
+  .content {
+    padding-top: 80px;
+  }
+
   .title {
     font-size: 30px;
   }
   .text {
     padding: 20px 0;
-    font-size: 16px;
+    font-size: 19px;
   }
   .image {
     max-width: 350px;

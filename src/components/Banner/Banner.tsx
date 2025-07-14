@@ -9,8 +9,9 @@ function Banner() {
           <h1 className={styles.title}>HR на аутсорсе под ключ</h1>
           <p className={styles.text}>
             Помогаю исцелять компании <br />
-            для эффективного управления своего
-            <br /> персонала в сферах sale, marketing, IT
+            для эффективного управления своим
+            <br />
+            персоналом в сферах коммерции, маркетинга и IT
           </p>
           <a
             href='https://2meetup.in/evgeniiaorlova/meet'
