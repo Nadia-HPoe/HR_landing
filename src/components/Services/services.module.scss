@@ -7,9 +7,10 @@
   font-style: normal;
 }
 .cards {
-  display: grid;
-  grid-template-columns: repeat(3, 450px);
-  justify-content: space-around;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
 }
 .card {
   display: flex;
@@ -97,17 +98,13 @@
   }
 }
 
-@media (max-width: 1439px) {
-  .cards {
-    grid-template-columns: repeat(1, 450px);
-    gap: 50px;
-    justify-items: center;
-  }
-}
-
 @media (max-width: 1099px) {
   .services {
     padding: 0 60px 60px;
+  }
+  .cards {
+    flex-direction: column;
+    align-items: center;
   }
   .card {
     padding: 15px 25px;
@@ -130,9 +127,6 @@
 @media (max-width: 767px) {
   .services {
     padding: 0 20px 20px;
-  }
-  .cards {
-    grid-template-columns: repeat(1, 300px);
   }
   .card {
     padding: 10px 15px;

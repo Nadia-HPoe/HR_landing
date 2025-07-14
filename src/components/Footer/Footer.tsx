@@ -47,12 +47,14 @@ function Footer() {
             </a>
 
             <a
-              href='https://t.me/orlova_reccomendation'
+              href='https://t.me/EvgeniiaOrlova'
               target='blank'
               className={styles.contact_link}
             >
               <img src={TG} alt='' className={styles.contact_icon} />
-              <p className={styles.contact_text}>закрытый канал с резюме</p>
+              <p className={styles.contact_text}>
+                закрытый канал с резюме - по запросу
+              </p>
             </a>
           </div>
           <div className={styles.contact_item}>
