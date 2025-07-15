@@ -11,6 +11,7 @@ import img6 from "../../../assets/images/diploma6.jpg";
 import img7 from "../../../assets/images/diploma7.jpg";
 import img8 from "../../../assets/images/diploma8.jpg";
 import img9 from "../../../assets/images/diploma9.jpg";
+import img10 from "../../../assets/images/diploma10.jpg";
 import arrowl from "../../../assets/images/arrow_left.png";
 import arrowr from "../../../assets/images/arrow_right.png";
 type Slide = {
@@ -20,6 +21,7 @@ type Slide = {
 const slidesData: Slide[] = [
   { src: img8 },
   { src: img9 },
+  { src: img10 },
   { src: img1 },
   { src: img4 },
   { src: img3 },

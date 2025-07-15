@@ -64,54 +64,54 @@ const pluginConfig: CookieConsentConfig = {
     translations: {
       en: {
         consentModal: {
-          title: "This website uses cookies",
+          title: "Этот веб-сайт использует файлы cookie",
           description:
-            "We use cookies to personalise content and ads, to provide social media features and to analyse our traffic. We also share information about your use of our site with our social media, advertising and analytics partners who may combine it with other information that you’ve provided to them or that they’ve collected from your use of their services.",
-          acceptAllBtn: "Accept all",
-          acceptNecessaryBtn: "Reject all",
-          showPreferencesBtn: "Manage preferences",
+            "Мы используем файлы cookie для персонализации контента и рекламы, предоставления функций социальных сетей и анализа нашего трафика. Мы также делимся информацией о том, как вы используете наш сайт, с нашими партнерами по социальным сетям, рекламе и аналитике, которые могут объединять ее с другой информацией, которую вы им предоставили или которую они собрали в результате использования вами их услуг.",
+          acceptAllBtn: "Принять все",
+          acceptNecessaryBtn: "Отклонить все",
+          showPreferencesBtn: "Управление настройками",
         },
         preferencesModal: {
-          title: "Cookie preferences",
-          acceptAllBtn: "Accept all",
-          acceptNecessaryBtn: "Reject all",
-          savePreferencesBtn: "Save preferences",
-          closeIconLabel: "Close",
+          title: "Настройки файлов cookie",
+          acceptAllBtn: "Принять все",
+          acceptNecessaryBtn: "Отклонить все",
+          savePreferencesBtn: "Сохранить настройки",
+          closeIconLabel: "Закрыть",
           sections: [
             {
-              title: "Cookie Usage",
+              title: "Использование файлов cookie",
               description:
-                "Cookies are small text files that can be used by websites to make a user's experience more efficient.\n\nThe law states that we can store cookies on your device if they are strictly necessary for the operation of this site. For all other types of cookies we need your permission.\n\nThis site uses different types of cookies. Some cookies are placed by third party services that appear on our pages.\n\nYou can at any time change or withdraw your consent from the Cookie Declaration on our website.",
+                "Файлы cookie — это небольшие текстовые файлы, которые веб-сайты могут использовать для повышения эффективности работы пользователя.\n\nЗакон гласит, что мы можем хранить файлы cookie на вашем устройстве, если они строго необходимы для работы этого сайта. Для всех остальных типов файлов cookie нам требуется ваше разрешение.\n\nЭтот сайт использует различные типы файлов cookie. Некоторые файлы cookie размещаются сторонними службами, которые отображаются на наших страницах.\n\nВы можете в любое время изменить или отозвать свое согласие из Заявления о файлах cookie на нашем веб-сайте.",
             },
             {
               title:
-                'Strictly Necessary Cookies <span class="pm__badge">Always Enabled</span>',
+                'Строго необходимые файлы cookie <span class="pm__badge">Всегда включены</span>',
               description:
-                "Necessary cookies help make a website usable by enabling basic functions like page navigation and access to secure areas of the website. The website cannot function properly without these cookies.",
+                "Необходимые файлы cookie помогают сделать веб-сайт пригодным для использования, обеспечивая базовые функции, такие как навигация по страницам и доступ к защищенным областям веб-сайта. Веб-сайт не может нормально функционировать без этих файлов cookie.",
               linkedCategory: "necessary",
             },
             {
-              title: "Functionality Cookies",
+              title: "Функциональные файлы cookie",
               description:
-                "Functionality cookies enable a website to remember information that changes the way the website behaves or looks, like your preferred language or the region that you are in.",
+                "Функциональные файлы cookie позволяют веб-сайту запоминать информацию, которая изменяет его поведение или внешний вид, например, ваш предпочитаемый язык или регион, в котором вы находитесь.",
               linkedCategory: "functionality",
             },
             {
-              title: "Analytics Cookies",
+              title: "Аналитические файлы cookie",
               description:
-                "Analytics cookies help website owners to understand how visitors interact with websites by collecting and reporting information anonymously.",
+                "Аналитические файлы cookie помогают владельцам веб-сайтов понять, как посетители взаимодействуют с веб-сайтами, собирая и сообщая информацию анонимно.",
               linkedCategory: "analytics",
             },
             {
-              title: "Marketing Cookies",
+              title: "Маркетинговые файлы cookie",
               description:
-                "Marketing cookies are used to track visitors across websites. The intention is to display ads that are relevant and engaging for the individual user and thereby more valuable for publishers and third party advertisers.",
+                "Маркетинговые файлы cookie используются для отслеживания посетителей на разных веб-сайтах. Их цель — показывать рекламу, которая актуальна и интересна для отдельного пользователя, и, следовательно, более ценна для издателей и сторонних рекламодателей.",
               linkedCategory: "marketing",
             },
             {
-              title: "More information",
+              title: "Дополнительная информация",
               description:
-                'For any query in relation to my policy on cookies and your choices, please <a class="cc__link" href="https://t.me/EvgeniiaOrlova">contact me</a>.',
+                'По любым вопросам, касающимся моей политики в отношении файлов cookie и ваших вариантов выбора, пожалуйста, <a class="cc__link" href="https://t.me/EvgeniiaOrlova">свяжитесь со мной</a>.',
             },
           ],
         },
