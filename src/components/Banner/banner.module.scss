@@ -21,6 +21,8 @@
   color: var.$d-blue;
 }
 .content {
+  display: flex;
+  flex-direction: column;
   padding-top: 100px;
 }
 .title {
@@ -148,6 +150,7 @@
   }
   .content {
     padding-top: 25px;
+    align-items: center;
     text-align: center;
   }
   .title {
