@@ -43,14 +43,16 @@ function Links() {
             </div>
             <div className={styles.social_item}>
               <img src={TG} alt='' />
-              закрытый канал с резюме -
-              <a
-                className={styles.link}
-                href='https://t.me/HR_OrlovaEV'
-                target='blank'
-              >
-                по запросу
-              </a>
+              <p>
+                закрытый канал с резюме -{" "}
+                <a
+                  className={styles.link}
+                  href='https://t.me/HR_OrlovaEV'
+                  target='blank'
+                >
+                  по запросу
+                </a>
+              </p>
             </div>
           </div>
           <div className={styles.social_bot}>
