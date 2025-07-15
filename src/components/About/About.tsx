@@ -44,7 +44,8 @@ function About() {
               HR процессы (построение и реинжиниринг)
             </li>
             <li className={styles.about_list_item}>Headhunting</li>
-            <li className={styles.about_list_item}>HR marketing на сайте</li>
+            <li className={styles.about_list_item}>HR marketing</li>
+            <li className={styles.about_list_item}>Delivery Recruitment</li>
           </ul>
         </div>
       </div>
