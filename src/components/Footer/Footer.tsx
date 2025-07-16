@@ -74,7 +74,7 @@ function Footer() {
                 <img src={Teen} alt='' />
               </a>
               <a
-                href='https://2meetup.in/evgeniiaorlova'
+                href='https://2meetup.in/orlovatech'
                 target='blank'
                 className={styles.contact_link}
               >

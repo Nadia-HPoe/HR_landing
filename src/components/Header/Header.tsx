@@ -84,10 +84,7 @@ function Header() {
       </nav>
       <div className={styles.contact}>
         <p className={styles.phone}> +7 (925) 371 01 30</p>
-        <a
-          href='https://2meetup.in/evgeniiaorlova/meet'
-          className={styles.button}
-        >
+        <a href='https://2meetup.in/orlovatech' className={styles.button}>
           Консультация
         </a>
       </div>

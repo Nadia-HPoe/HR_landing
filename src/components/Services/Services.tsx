@@ -13,7 +13,7 @@ function Services() {
             вакансии, а также оптимизировать процесс работы с ними
           </p>
           <a
-            href='https://2meetup.in/evgeniiaorlova/meet'
+            href='https://2meetup.in/orlovatech/konsultaciya'
             className={styles.card_button}
           >
             записаться
@@ -26,7 +26,7 @@ function Services() {
             персоналом для вашего бизнеса и дальнейшее сопровождение
           </p>
           <a
-            href='https://2meetup.in/evgeniiaorlova/meet'
+            href='https://2meetup.in/orlovatech/konsultaciya'
             className={styles.card_button}
           >
             записаться
@@ -40,7 +40,7 @@ function Services() {
             специалистов для вашего бизнеса.
           </p>
           <a
-            href='https://2meetup.in/evgeniiaorlova/meet'
+            href='https://2meetup.in/orlovatech/konsultaciya'
             className={styles.card_button}
           >
             записаться
@@ -54,7 +54,7 @@ function Services() {
             тонкостях
           </p>
           <a
-            href='https://2meetup.in/evgeniiaorlova/meet'
+            href='https://2meetup.in/orlovatech/konsultaciya'
             className={styles.card_button}
           >
             записаться
@@ -67,7 +67,7 @@ function Services() {
             увольнений. Весь процесс строго конфидециален для бизнеса
           </p>
           <a
-            href='https://2meetup.in/evgeniiaorlova/meet'
+            href='https://2meetup.in/orlovatech/konsultaciya'
             className={styles.card_button}
           >
             записаться

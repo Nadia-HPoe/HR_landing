@@ -11,7 +11,7 @@ function FooterBanner() {
           </p>
         </div>
         <a
-          href='https://2meetup.in/evgeniiaorlova/meet'
+          href='https://2meetup.in/orlovatech'
           className={styles.banner_button}
         >
           записаться

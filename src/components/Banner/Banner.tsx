@@ -13,10 +13,7 @@ function Banner() {
             <br />
             персоналом в сферах коммерции, маркетинга и IT
           </p>
-          <a
-            href='https://2meetup.in/evgeniiaorlova/meet'
-            className={styles.button}
-          >
+          <a href='https://2meetup.in/orlovatech' className={styles.button}>
             записаться на КОНСУЛЬТАЦИЮ
           </a>
         </div>
