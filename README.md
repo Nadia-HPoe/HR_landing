@@ -26,7 +26,7 @@
 - 🧩 Easy Customization: Clear structure to adapt text, visuals, and branding.
 
 
-## Tech Stack
+### Tech Stack
 
 | Technology           | Description                     |
 |---------------------|--------------------------------|
@@ -55,24 +55,14 @@
    
 
 ### Project Structure
-
 .
 ├── public/ # Static assets
-│
 ├── src/
-│
-│ ├── assets/ # Images, fonts, styles
-│
+│ ├── assets/ # Images, fonts, icons
 │ ├── components/ # React components
-│
-│ ├── hooks/
-│
+│ ├── styles/ # Sass styles
 │ ├── App.tsx # Main app entry point
-│
 │ └── main.tsx # React/Vite entry
-│
 ├── package.json
-│
 ├── vite.config.ts
-│
 └── README.md
