@@ -3,7 +3,7 @@
 </div>
 <h1> HR Advisor Landing Page </h1>
 
-### About The Project
+## About The Project
   <p align="left">
    This project provides a modern, responsive landing page for HR Advisor, designed to attract and inform users about HR Advisor's offerings. The stack leverages the performance and developer experience of Vite, strict typing with TypeScript, modular styling with Sass, and full compliance with cookie regulations using vanilla-cookieconsent.
   </p>
@@ -11,7 +11,7 @@
 <h2 align="center"><a href="http://www.orlova.io/">View site</a></h2>
 
 
-### Features
+## Features
 
 - ⚡️ Fast: Vite-powered development and build.
 
@@ -26,7 +26,7 @@
 - 🧩 Easy Customization: Clear structure to adapt text, visuals, and branding.
 
 
-### Tech Stack
+## Tech Stack
 
 | Technology           | Description                     |
 |---------------------|--------------------------------|
@@ -37,7 +37,7 @@
 | vanilla-cookieconsent| Cookie banner & consent management |
 
 
-### Installation
+## Installation
 
 1. Clone the repo
    ```sh
@@ -51,18 +51,3 @@
    ```js
    npm start
    ```
-
-   
-
-### Project Structure
-.
-├── public/ # Static assets
-├── src/
-│ ├── assets/ # Images, fonts, icons
-│ ├── components/ # React components
-│ ├── styles/ # Sass styles
-│ ├── App.tsx # Main app entry point
-│ └── main.tsx # React/Vite entry
-├── package.json
-├── vite.config.ts
-└── README.md
