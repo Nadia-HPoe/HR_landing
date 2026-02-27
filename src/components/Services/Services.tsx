@@ -76,7 +76,7 @@ function Services() {
       </div>
       <ul className={styles.list}>
         <span>
-          Стоимость консультации от 10000₽ <br />
+          Стоимость консультации от 25000₽ <br />
           (в зависимости от запроса):
         </span>
         <li className={styles.list_item}>первая со скидкой 30%</li>
