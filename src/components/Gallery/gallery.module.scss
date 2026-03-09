@@ -59,21 +59,78 @@
   background-color: var.$dust;
   padding: 0 110px 188px;
 }
-.sliders {
+// ── Continuous-scroll carousel ──────────────────────────────────────────────
+
+// The visible window — clips the moving track
+.sliders_viewport {
+  flex: 1;
+  overflow: hidden;
+  // Fade edges for a polished "infinite" feel
+  mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    black 6%,
+    black 94%,
+    transparent 100%
+  );
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    black 6%,
+    black 94%,
+    transparent 100%
+  );
+}
+
+// The scrolling strip — width is set automatically by its flex children
+.sliders_track {
   display: flex;
   gap: 40px;
+  will-change: transform; // GPU-composited scroll
 }
+
 .slide {
   cursor: pointer;
+  flex-shrink: 0;
+  border-radius: 4px;
+  overflow: hidden;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+
+  &:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 28px rgba(0, 0, 0, 0.22);
+  }
 }
+
 .slide_img {
   max-width: 600px;
   max-height: 352px;
+  display: block;
+  pointer-events: none; // prevent accidental drag-selection while scrolling
+  user-select: none;
 }
+
 .carousel_container {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  gap: 12px;
+}
+
+// Small "paused" badge shown while hovering
+.paused_badge {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  opacity: 0.4;
+  color: inherit;
+  pointer-events: none;
+  animation: fadeIn 0.2s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 0.4; }
 }
 .button {
   padding: 15px;
@@ -106,6 +163,9 @@
   .carousel {
     padding: 0 70px 150px;
   }
+  .sliders_track {
+    gap: 32px;
+  }
   .slide_img {
     max-width: 380px;
     max-height: 260px;
@@ -129,7 +189,7 @@
   .info_container {
     padding: 0 248px 100px;
   }
-  .sliders {
+  .sliders_track {
     align-items: center;
   }
   .carousel {
@@ -163,6 +223,9 @@
   }
   .carousel {
     padding: 0 0 50px;
+  }
+  .sliders_track {
+    gap: 24px;
   }
   .slide_img {
     max-width: 300px;
